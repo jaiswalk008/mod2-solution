@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Farewell Party</title>
+</head>
+<body style="background-color:#ffe6e6">
+
+
+<h1> Farewell Party Survey Form</h1>
+<form style="font-family:arial" id="farewell-survey" method="post">
+<label for="name">Full Name</label>
+<input style="margin-left:8px" type="text" id="name" name="name" placeholder="Enter your name" autofocus>
+<br><br>
+<label for="email">Email</label>
+<input style="margin-left:8px" type="email" id= "email" name="email" placeholder="Enter your email">
+<br><br>
+<label for="age">Age</label>
+<input style="margin-left:8px" type="number" id="age" name="age" placeholder= "Enter your age"> <br><br>
+<label for="phone"> Phone Number</label>
+
+<input style="margin-left:8px" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone"
+name="phone" placeholder="123-456-7890" maxlength="12">
+<br><br>
+<label for="role">Which option best describes you?</label>
+<select style="margin-left:8px" id="role" name="role">
+<option value="student">Student</option>
+<option value="fresher">fresher</option>
+<option value="professional">Professional</option>
+<option value="other">other</option></select>
+<br><br>
+<p> will you attend this party?
+<input style="margin-left:12px" type="radio" id="attend1" name="attend"
+value="attend1">
+<label for="attend1">
+Yes</label>
+<input style="margin-left:12px" type="radio" id="attend2" name="attend"
+value="attend2">
+<label for="attend2">
+No</label>
+</p>
+<p>What did you like about the program?</p>
+<input type="checkbox" id="training" name="training" value="training">
+<label for="training" >Training</label><br>
+
+<input type="checkbox" id="learning" name="learning" value="learning">
+<label for="learning" >The Learning Sessions from Industry Experts</label><br>
+
+<input type="checkbox" id="community" name="community" value="community">
+<label for="community" >Community Meetups</label><br>
+
+<input type="checkbox" id="other" name="other" value="other">
+<label for="other" >Food,company etc.</label><br>
+
+<label for="comment">Any suggestion or comments</label>
+<textarea style="margin-left:15px" id="comments"></textarea>
+<br><br>
+<input type="reset" value= "Reset" onclick="alert('The Form is reset.')" formaction="index.html">
+<input style="margin-left:7px" type="submit" value= "Submit" onclick="alert('The Form is Submitted.')"formaction="index.html">
+</body>
+</html>
+
+
+
